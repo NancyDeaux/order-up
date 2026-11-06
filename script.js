@@ -13,7 +13,7 @@ for (let i = 0; i < prices.length; i++) {
  total += prices[i];
 }
 // Show the final total in the console
-document.getElementById("total").textContent = $ + total;
+document.getElementById("order-total").textContent = "$" + total;
 
 tags.forEach(function (tag) {
     const li = document.createElement("li");
