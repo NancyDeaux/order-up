@@ -8,9 +8,12 @@ console.log("Tags array:", tags);
 console.log("Prices array:", prices);
 
 let total = 0;
+// Loop through the prices array and calculate the total
 for (let i = 0; i < prices.length; i++) {
- total = total + prices[i];
+ total += prices[i];
 }
+// Show the final total in the console
+document.getElementById("total").textContent = $ + total;
 
 tags.forEach(function (tag) {
     const li = document.createElement("li");
